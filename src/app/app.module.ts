@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { DashboardHRComponent } from './components/dashboard-hr/dashboard-hr.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PaymentComponent } from './components/payment/payment.component';
     FooterComponent,
     Navbar2Component,
     Footer2Component,
-    PaymentComponent
+    PaymentComponent,
+    DashboardHRComponent
   ],
   imports: [
     BrowserModule,

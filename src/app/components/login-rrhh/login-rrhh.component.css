@@ -1,0 +1,99 @@
+/* Estilos para el contenedor general del login */
+.login-container {
+    display: flex;
+    justify-content: center; /* Centrar los hijos horizontalmente */
+    align-items: stretch; /* Esto hará que los hijos ocupen toda la altura disponible */
+    height: 100vh;
+    background-color: #EDF2F7; /* Color de fondo general */
+}
+
+/* Estilos para la sección de bienvenida */
+.welcome-section {
+    flex: 1;  /* Permite que la sección de bienvenida ocupe la mitad del espacio */
+    background-image: url('/assets/fondologin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: #FFFFFF; /* Asumiendo que el texto debe ser blanco */
+}
+
+/* Estilos para la sección del formulario */
+.login-section {
+    flex: 1;  /* Permite que la sección del formulario ocupe la otra mitad del espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el formulario verticalmente */
+    background-color: transparent; /* Fondo transparente para esta sección */
+}
+
+/* Estilos para el contenedor del formulario */
+.login-section form {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo del formulario */
+    padding: 40px;
+    background-color: #FFFFFF; /* Color de fondo para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    margin: 0 auto; /* Asegura que el formulario se mantenga centrado */
+}
+
+/* Estilos para el título 'Inicio de sesión' */
+.login-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* semi-bold */
+    font-size: 24px; /* Ajusta el tamaño de fuente según corresponda */
+    color: #27272E; /* Color del texto proporcionado */
+    margin-bottom: 20px; /* Añade un espacio debajo del título */
+}
+
+/* Estilos para los labels de los campos de formulario */
+.login-section label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Ajusta según tu diseño */
+    color: #425466; /* Color para los labels proporcionado */
+    margin-bottom: 8px; /* Espacio debajo del label */
+}
+
+/* Estilos para los campos de entrada */
+.login-section input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; /* Ajusta según tu diseño */
+    color: #425466; /* Color del texto dentro de los campos */
+    background-color: #EDF2F7; /* Fondo para los campos proporcionado */
+    border: 1px solid #D1D1D1; /* Añade un borde si es necesario */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno en los campos de entrada */
+    margin-bottom: 20px; /* Espacio debajo de cada campo de entrada */
+}
+
+/* Estilo para el botón de 'Iniciar Sesión' */
+.login-section button {
+    background-color: #33A69A; /* Cambia al color de tu botón según el diseño */
+    color: #FFFFFF; /* Color del texto en el botón */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* semi-bold */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Ajusta según tu diseño */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Añade media queries para ajustar el diseño responsivo si es necesario */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column; /* Apila las secciones verticalmente en pantallas pequeñas */
+    }
+
+    .welcome-section, .login-section {
+        width: 100%; /* Ambas secciones ocuparán el 100% del ancho en pantallas pequeñas */
+        padding: 20px; /* Ajusta el relleno para pantallas pequeñas */
+    }
+
+    .login-section {
+        justify-content: flex-start; /* El formulario se alineará al principio en pantallas pequeñas */
+    }
+}

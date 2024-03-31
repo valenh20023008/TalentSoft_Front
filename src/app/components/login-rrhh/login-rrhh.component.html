@@ -1,0 +1,22 @@
+<div class="login-container">
+    <div class="welcome-section">
+      <!-- Aquí iría tu imagen de fondo o logo si es necesario -->
+      <h1>Bienvenido Reclutador!</h1>
+      <p>Tu labor como reclutador es la clave para construir equipos excepcionales y cambiar vidas. ¡Sigue adelante y haz que cada contratación cuente!</p>
+    </div>
+    <div class="login-section">
+      <h2>Inicio de sesión</h2>
+      <form (submit)="onSubmit()">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" [(ngModel)]="user.email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+        </div>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+  
